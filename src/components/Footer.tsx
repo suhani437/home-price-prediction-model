@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-200 py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="font-bold text-xl flex items-center">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -35,24 +35,8 @@ const Footer = () => {
             <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Company</h3>
             <ul className="space-y-2 text-gray-400">
               <li><Link to="/about" className="hover:text-white transition">About Us</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
               <li><Link to="/privacy" className="hover:text-white transition">Privacy Policy</Link></li>
             </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Stay Updated</h3>
-            <p className="text-gray-400 mb-4 text-sm">Subscribe to our newsletter for the latest updates.</p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="bg-gray-800 text-white px-4 py-2 rounded-l-md focus:outline-none w-full"
-              />
-              <button type="submit" className="bg-primary-blue hover:bg-blue-700 text-white px-4 py-2 rounded-r-md">
-                Subscribe
-              </button>
-            </form>
           </div>
         </div>
         

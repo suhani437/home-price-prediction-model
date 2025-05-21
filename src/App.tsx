@@ -8,7 +8,6 @@ import HomePage from "./pages/HomePage";
 import PredictionPage from "./pages/PredictionPage";
 import ResultsPage from "./pages/ResultsPage";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,7 +23,6 @@ const App = () => (
           <Route path="/predict" element={<PredictionPage />} />
           <Route path="/results" element={<ResultsPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -19,7 +19,6 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/" className="text-gray-700 hover:text-primary-blue">Home</Link>
           <Link to="/about" className="text-gray-700 hover:text-primary-blue">About</Link>
-          <Link to="/contact" className="text-gray-700 hover:text-primary-blue">Contact</Link>
         </nav>
         <div>
           <Button variant="outline" className="hidden md:inline-flex mr-2">How it works</Button>
