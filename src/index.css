@@ -80,63 +80,6 @@
   h1, h2, h3, h4 {
     @apply tracking-tight;
   }
-  
-  /* Student project marquee effect */
-  .marquee-text {
-    animation: marquee 20s linear infinite;
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-}
-
-/* Animation for the blob effect in hero section */
-.animate-blob {
-  animation: blob-bounce 7s infinite;
-}
-
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-@keyframes blob-bounce {
-  0%, 100% {
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(10px, -10px) scale(1.05);
-  }
-  50% {
-    transform: translate(0, 20px) scale(0.95);
-  }
-  75% {
-    transform: translate(-10px, -15px) scale(1.05);
-  }
-}
-
-/* Hand-drawn effect for lines and borders */
-.hand-drawn {
-  filter: url('#hand-drawn');
-}
-
-/* College notebook style */
-.notebook-paper {
-  background-color: white;
-  background-image: 
-    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-    linear-gradient(#eee .1em, transparent .1em);
-  background-size: 100% 1.2em;
-  padding-left: 8rem;
 }
 
 /* Extend the prose class for better typography */
@@ -149,7 +92,7 @@
 }
 
 .prose a {
-  @apply text-purple-600 hover:underline decoration-wavy;
+  @apply text-purple-600 hover:underline;
 }
 
 .prose ul {
@@ -158,22 +101,4 @@
 
 .prose p {
   @apply mb-4;
-}
-
-/* Highlighter effect */
-.highlight {
-  position: relative;
-  display: inline-block;
-}
-
-.highlight::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 0.5em;
-  width: 100%;
-  background-color: rgba(253, 224, 71, 0.5); /* yellow-300 with opacity */
-  z-index: -1;
-  transform: rotate(-1deg);
 }
