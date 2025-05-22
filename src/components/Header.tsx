@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -16,14 +15,10 @@ const Header = () => {
             House<span className="text-blue-500">Pricer</span>
           </Link>
         </div>
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="flex items-center space-x-8">
           <Link to="/" className="text-gray-700 hover:text-purple-600">Home</Link>
           <Link to="/about" className="text-gray-700 hover:text-purple-600">About</Link>
         </nav>
-        <div>
-          <Button variant="outline" className="hidden md:inline-flex mr-2">How it works</Button>
-          <Button className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600">Get Started</Button>
-        </div>
       </div>
     </header>
   );
