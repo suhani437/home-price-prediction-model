@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
@@ -18,9 +17,6 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-purple-500 hover:bg-purple-600">
                 <Link to="/predict" className="text-white">Try It Out!</Link>
-              </Button>
-              <Button variant="outline" size="lg">
-                How It Works
               </Button>
             </div>
           </div>
