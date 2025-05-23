@@ -19,6 +19,10 @@ const AboutPage = () => {
                 accessible, transparent, and data-driven for everyone.
               </p>
               
+              <p className="text-gray-600 mb-6">
+                House Pricer is a mini project developed by a group of four BCA of 'f1' students — Suhani Bora, Shivanshi Rawat, Mahak Santokhi, and Saniya Bisht. The aim of this project is to predict house prices using linear regression, a fundamental machine learning technique.
+              </p>
+              
               <h2 className="text-2xl font-bold mt-10 mb-4">Our Technology</h2>
               <p className="text-gray-600 mb-4">
                 We use linear regression, a proven machine learning algorithm, to analyze vast amounts
@@ -28,6 +32,22 @@ const AboutPage = () => {
               <p className="text-gray-600 mb-6">
                 Our model is trained on thousands of property transactions and is constantly updated
                 to reflect the latest market trends and conditions.
+              </p>
+              
+              <p className="text-gray-600 mb-4">
+                <strong>Programming Language:</strong> Python was used to build the core machine learning model.
+              </p>
+              <p className="text-gray-600 mb-4">
+                <strong>Machine Learning Library:</strong> Scikit-learn was implemented for building and training the linear regression model.
+              </p>
+              <p className="text-gray-600 mb-4">
+                <strong>Dataset:</strong> A historical home dataset was used to train and evaluate the model.
+              </p>
+              <p className="text-gray-600 mb-4">
+                <strong>Development Platforms:</strong> VS Code and Replit were used for coding, testing, and collaboration.
+              </p>
+              <p className="text-gray-600 mb-6">
+                <strong>Frontend Technologies:</strong> HTML, CSS, JavaScript, and React were used to design a responsive and interactive user interface.
               </p>
               
               <h2 className="text-2xl font-bold mt-10 mb-4">The Data</h2>
@@ -41,23 +61,6 @@ const AboutPage = () => {
                 <li>Location information and neighborhood statistics</li>
                 <li>Market trends and economic indicators</li>
               </ul>
-              
-              <h2 className="text-2xl font-bold mt-10 mb-4">How Linear Regression Works</h2>
-              <p className="text-gray-600 mb-4">
-                Linear regression is a statistical method used to model the relationship between a dependent
-                variable (house price) and one or more independent variables (features like square footage,
-                number of bedrooms, etc.).
-              </p>
-              <p className="text-gray-600 mb-4">
-                The algorithm creates a linear equation that best fits the data, allowing us to predict prices
-                for new properties based on their features. The model continuously improves as more data becomes available.
-              </p>
-              
-              <h2 className="text-2xl font-bold mt-10 mb-4">Contact Us</h2>
-              <p className="text-gray-600">
-                Have questions about our prediction model or want to learn more about HomePricer?
-                Feel free to <a href="/contact" className="text-primary-blue hover:underline">contact us</a>.
-              </p>
             </div>
           </div>
         </div>
