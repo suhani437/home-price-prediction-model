@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,12 +12,6 @@ const AboutPage = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-6">About HomePricer</h1>
             
             <div className="prose prose-lg">
-              <p className="text-gray-600 mb-6">
-                HomePricer is an advanced house price prediction platform that uses machine learning
-                to provide accurate real estate valuations. Our mission is to make property valuation
-                accessible, transparent, and data-driven for everyone.
-              </p>
-              
               <p className="text-gray-600 mb-6">
                 House Pricer is a mini project developed by a group of four BCA of 'f1' students — Suhani Bora, Shivanshi Rawat, Mahak Santokhi, and Saniya Bisht. The aim of this project is to predict house prices using linear regression, a fundamental machine learning technique.
               </p>
