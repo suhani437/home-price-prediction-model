@@ -1,10 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 const AboutPage = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow py-12">
         <div className="container mx-auto px-4">
@@ -17,15 +15,8 @@ const AboutPage = () => {
               </p>
               
               <h2 className="text-2xl font-bold mt-10 mb-4">Our Technology</h2>
-              <p className="text-gray-600 mb-4">
-                We use linear regression, a proven machine learning algorithm, to analyze vast amounts
-                of real estate data and identify the key factors that influence property prices in
-                different markets.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Our model is trained on thousands of property transactions and is constantly updated
-                to reflect the latest market trends and conditions.
-              </p>
+              <p className="text-gray-600 mb-4"></p>
+              <p className="text-gray-600 mb-6"></p>
               
               <p className="text-gray-600 mb-4">
                 <strong>Programming Language:</strong> Python was used to build the core machine learning model.
@@ -59,8 +50,6 @@ const AboutPage = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default AboutPage;
