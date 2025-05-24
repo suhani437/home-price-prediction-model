@@ -10,9 +10,7 @@ const AboutPage = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-6">About HomePricer</h1>
             
             <div className="prose prose-lg">
-              <p className="text-gray-600 mb-6">
-                House Pricer is a mini project developed by a group of four BCA of 'f1' students — Suhani Bora, Shivanshi Rawat, Mahak Santokhi, and Saniya Bisht. The aim of this project is to predict house prices using linear regression, a fundamental machine learning technique.
-              </p>
+              <p className="text-gray-600 mb-6">House Pricer is a mini project developed by a group of four BCA students from 'f1'— Suhani Bora, Shivanshi Rawat, Mahak Santokhi, and Saniya Bisht. The aim of this project is to predict house prices using linear regression, a fundamental machine learning technique.</p>
               
               <h2 className="text-2xl font-bold mt-10 mb-4">Our Technology</h2>
               <p className="text-gray-600 mb-4"></p>
