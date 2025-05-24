@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -32,12 +31,14 @@ const ResultsDisplay = () => {
   }, []);
 
   const formatCurrency = (value: number) => {
-    return new Intl.NumberFormat('en-US', {
+    // Convert USD to INR (approximate rate: 1 USD = 83 INR)
+    const inrValue = value * 83;
+    return new Intl.NumberFormat('en-IN', {
       style: 'currency',
-      currency: 'USD',
+      currency: 'INR',
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
-    }).format(value);
+    }).format(inrValue);
   };
 
   const getPropertyTypeLabel = (type: string) => {
