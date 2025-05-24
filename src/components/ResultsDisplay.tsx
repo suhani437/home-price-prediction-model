@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
-
 interface PredictionResult {
   predictedPrice: number;
   formData: {
@@ -15,11 +14,9 @@ interface PredictionResult {
     propertyType: string;
   };
 }
-
 const ResultsDisplay = () => {
   const [result, setResult] = useState<PredictionResult | null>(null);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     // In a complete implementation, we would fetch the results from the API
     // For now, we'll retrieve from localStorage which was set in the form component
@@ -29,7 +26,6 @@ const ResultsDisplay = () => {
     }
     setLoading(false);
   }, []);
-
   const formatCurrency = (value: number) => {
     // Convert USD to INR (approximate rate: 1 USD = 83 INR)
     const inrValue = value * 83;
@@ -40,9 +36,10 @@ const ResultsDisplay = () => {
       maximumFractionDigits: 0
     }).format(inrValue);
   };
-
   const getPropertyTypeLabel = (type: string) => {
-    const types: {[key: string]: string} = {
+    const types: {
+      [key: string]: string;
+    } = {
       'single_family': 'Single Family Home',
       'condo': 'Condominium',
       'townhouse': 'Townhouse',
@@ -50,18 +47,13 @@ const ResultsDisplay = () => {
     };
     return types[type] || type;
   };
-
   if (loading) {
-    return (
-      <div className="flex justify-center items-center min-h-[400px]">
+    return <div className="flex justify-center items-center min-h-[400px]">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-blue"></div>
-      </div>
-    );
+      </div>;
   }
-
   if (!result) {
-    return (
-      <Card className="max-w-3xl mx-auto shadow-lg">
+    return <Card className="max-w-3xl mx-auto shadow-lg">
         <CardHeader>
           <CardTitle className="text-2xl">No Results Found</CardTitle>
           <CardDescription>There are no prediction results available.</CardDescription>
@@ -76,31 +68,15 @@ const ResultsDisplay = () => {
             <Link to="/predict">Go to Prediction Form</Link>
           </Button>
         </CardFooter>
-      </Card>
-    );
+      </Card>;
   }
 
   // Calculate range for the prediction (±5%)
   const lowerBound = result.predictedPrice * 0.95;
   const upperBound = result.predictedPrice * 1.05;
-
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+  return <div className="max-w-4xl mx-auto px-4 py-8">
       <Card className="shadow-lg border-blue-100">
-        <CardHeader className="bg-gradient-to-r from-blue-50 to-indigo-50 border-b">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-            <div>
-              <CardTitle className="text-2xl md:text-3xl">Estimated House Price</CardTitle>
-              <CardDescription className="text-gray-600 mt-1">Based on your provided details</CardDescription>
-            </div>
-            <div className="mt-4 md:mt-0">
-              <span className="text-sm text-gray-500">Confidence: High</span>
-              <div className="w-full bg-gray-200 rounded-full h-2.5 mt-1">
-                <div className="bg-success h-2.5 rounded-full" style={{ width: '85%' }}></div>
-              </div>
-            </div>
-          </div>
-        </CardHeader>
+        
         
         <CardContent className="pt-6">
           <div className="text-center mb-8">
@@ -161,27 +137,11 @@ const ResultsDisplay = () => {
             </div>
           </div>
           
-          <div className="mt-8 bg-blue-50 p-4 rounded-lg">
-            <h4 className="font-medium text-gray-900 mb-2">How this prediction works</h4>
-            <p className="text-sm text-gray-600">
-              Our machine learning algorithm uses linear regression trained on thousands of real estate 
-              transactions. The model takes into account location, size, features and current market 
-              trends to generate accurate price estimates.
-            </p>
-          </div>
+          
         </CardContent>
         
-        <CardFooter className="flex flex-col sm:flex-row gap-4 justify-between border-t pt-6">
-          <Button variant="outline" asChild>
-            <Link to="/predict">Make Another Prediction</Link>
-          </Button>
-          <Button className="bg-primary-blue hover:bg-blue-700">
-            Download Detailed Report
-          </Button>
-        </CardFooter>
+        
       </Card>
-    </div>
-  );
+    </div>;
 };
-
 export default ResultsDisplay;
