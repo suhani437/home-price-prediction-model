@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -107,7 +106,6 @@ const HousePredictionForm = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="single_family">Single Family</SelectItem>
-                <SelectItem value="condo">Condo</SelectItem>
                 <SelectItem value="townhouse">Townhouse</SelectItem>
                 <SelectItem value="multi_family">Multi Family</SelectItem>
               </SelectContent>
