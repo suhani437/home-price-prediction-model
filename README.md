@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+HomePricer: Predicting House Prices Using Linear Regression
+A Mini Project by BCA Students from 'f1'
+Team Members:
 
-## Project info
+Suhani Bora
 
-**URL**: https://lovable.dev/projects/48db8f7d-e0b8-4cf7-8d91-5276cb3672db
+Shivanshi Rawat
 
-## How can I edit this code?
+Mahak Santokhi
 
-There are several ways of editing your application.
+Saniya Bisht
 
-**Use Lovable**
+1. Introduction
+HomePricer is a data-driven web application developed as a mini project by a group of four enthusiastic BCA students from section 'f1'. The project's core objective is to predict house prices using linear regression, a foundational algorithm in machine learning. With the rise of data-centric decision-making in real estate, this project aims to provide users with a tool that can offer estimated home values based on historical and real-time data.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/48db8f7d-e0b8-4cf7-8d91-5276cb3672db) and start prompting.
+2. Project Objectives
+To apply machine learning techniques for real-world data prediction.
 
-Changes made via Lovable will be committed automatically to this repo.
+To gain hands-on experience with supervised learning using Python.
 
-**Use your preferred IDE**
+To build a responsive and user-friendly web interface.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+To explore the influence of property features, location, and market trends on pricing.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. Technology Stack
+Backend & Machine Learning:
+Programming Language: Python
 
-Follow these steps:
+Machine Learning Library: Scikit-learn
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Model Used: Linear Regression
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Development Tools: VS Code, Replit
 
-# Step 3: Install the necessary dependencies.
-npm i
+Frontend Development:
+Languages: HTML, CSS, JavaScript
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Framework: React.js
 
-**Edit a file directly in GitHub**
+Features: Responsive design, real-time input validation, clean and intuitive UI
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+4. Dataset and Data Sources
+The accuracy and reliability of a machine learning model are highly dependent on the quality and richness of the dataset. For HomePricer, the dataset was curated by aggregating data from multiple trustworthy real estate databases. Key aspects of the dataset include:
 
-**Use GitHub Codespaces**
+Historical Home Sales: Past selling prices provide a benchmark for future predictions.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Property Features: Includes area (sq. ft.), number of bedrooms, bathrooms, age of the property, and amenities.
 
-## What technologies are used for this project?
+Geographical Information: Neighborhood profiles, proximity to schools, transport, shopping areas, etc.
 
-This project is built with:
+Market Indicators: Real estate trends, economic conditions, and inflation indexes.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The dataset was preprocessed to handle missing values, outliers, and ensure normalization for optimal model performance.
 
-## How can I deploy this project?
+5. Model Implementation
+We implemented a Linear Regression model using Scikit-learn, an efficient machine learning library in Python. The model was trained using a supervised learning approach where:
 
-Simply open [Lovable](https://lovable.dev/projects/48db8f7d-e0b8-4cf7-8d91-5276cb3672db) and click on Share -> Publish.
+Input Features: Property size, number of rooms, location index, etc.
 
-## Can I connect a custom domain to my Lovable project?
+Target Variable: House sale price
 
-Yes, you can!
+Steps in Model Development:
+Data Preprocessing: Cleaning, normalization, and feature engineering.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Model Training: Fitting the linear regression model to the dataset.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Evaluation Metrics: Mean Squared Error (MSE), R² score.
+
+Deployment: Model integrated into the web app for real-time predictions.
+
+6. Frontend User Interface
+The frontend was designed using React.js for dynamic component rendering. HTML, CSS, and JavaScript were used to ensure responsiveness and cross-device compatibility.
+
+Key Features:
+Interactive form inputs for user data entry
+
+Instant price prediction on submission
+
+Visual feedback and form validation
+
+Clean, modern layout for ease of use
+
+7. Results and Insights
+The linear regression model demonstrated a reliable ability to predict house prices with reasonable accuracy on the test set. Key insights observed include:
+
+Larger properties in prime locations consistently yielded higher prices.
+
+Neighborhood characteristics significantly impacted valuation.
+
+Older homes showed variable pricing, depending on renovations and locality.
+
+8. Challenges Faced
+Data Cleaning: Managing missing and inconsistent data values.
+
+Feature Selection: Choosing the most impactful features for prediction.
+
+UI Integration: Seamlessly connecting the frontend with the backend model.
+
+9. Conclusion and Future Scope
+HomePricer effectively showcases how machine learning can be applied to real estate price prediction. The combination of Python, Scikit-learn, and React enabled the team to build a functional, educational, and practical tool.
+
+Future Improvements:
+Integrate real-time data APIs for live updates.
+
+Introduce additional algorithms (e.g., Decision Trees, XGBoost) for comparison.
+
+Implement user authentication and data saving features.
+
+Deploy the app on cloud platforms for broader accessibility.
+
+10. Acknowledgements
+We sincerely thank our mentors, faculty members, and peers who supported us throughout this project. This initiative has significantly enhanced our understanding of applied machine learning and full-stack web development.
+
